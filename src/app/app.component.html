@@ -1,0 +1,5 @@
+<button class="large-font" *ngIf="!connected; else connectedLabel" (click)="connect()">Connect Wallet</button>
+<ng-template #connectedLabel>
+  <label class="large-font">Connected wallet:  {{getSelectedAddress()}}</label>
+</ng-template>
+
